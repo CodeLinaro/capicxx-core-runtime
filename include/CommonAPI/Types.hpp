@@ -92,6 +92,9 @@ typedef uint32_t Sender_t;
 #ifdef _WIN32
 typedef std::uint32_t uid_t;
 typedef std::uint32_t gid_t;
+#elif defined __QNX__
+typedef std::uint32_t uid_t;
+typedef std::uint32_t gid_t;
 #else
 typedef ::uid_t uid_t;
 typedef ::gid_t gid_t;
